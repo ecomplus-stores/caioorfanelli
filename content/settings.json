@@ -1,26 +1,26 @@
 {
-  "store_id": 51364,
-  "name": "caioorfanelli",
   "domain": "caioorfanelli.netlify.app",
-  "short_name": "caioorfanelli",
-  "description": "caioorfanelli",
+  "currency_symbol": "R$",
   "primary_color": "#222831",
-  "secondary_color": "#393e46",
-  "bg_color": "#ffffff",
   "theme": {
-    "bootswatch": "_",
-    "custom": "_"
+    "bootswatch": "litera",
+    "custom": "clean-dark"
   },
-  "logo": "/img/uploads/logo.png",
-  "mini_logo": "",
-  "icon": "/img/icon.png",
-  "large_icon": "/img/large-icon.png",
-  "favicon": "/img/uploads/favicon.png",
+  "bg_color": "#ffffff",
+  "repository": "ecomplus-stores/caioorfanelli",
+  "logo": "/img/uploads/oitocard-branco-png.png",
+  "name": "Oito Card",
+  "short_name": "Oito Card",
   "lang": "pt_br",
   "currency": "BRL",
-  "currency_symbol": "R$",
-  "country_code": "BR",
-  "repository": "ecomplus-stores/caioorfanelli",
+  "mini_logo": "",
+  "font_family": "_",
+  "favicon": "/img/uploads/favicon.png",
   "icons_font": "_",
-  "font_family": "_"
+  "country_code": "BR",
+  "secondary_color": "#ffffff",
+  "icon": "/img/uploads/oitocard-preto-png.png",
+  "store_id": 51364,
+  "description": "O Oito Card é um produto que une tecnologia e inovação, oferecendo cartões físicos e virtuais, possibilitando a personalização do cartão físico. ",
+  "large_icon": "/img/uploads/oitocard-preto-png.png"
 }
