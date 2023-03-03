@@ -4,7 +4,7 @@
   "primary_color": "#222831",
   "theme": {
     "bootswatch": "cerulean",
-    "custom": "clean-gray"
+    "custom": "clean-dark"
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/caioorfanelli",
@@ -21,6 +21,6 @@
   "secondary_color": "#ffffff",
   "icon": "/img/uploads/oitocard-preto-png.png",
   "store_id": 51364,
-  "description": "Crie o um Oito Cardo do seu jeito. Escolha layout, nome e logo para seu Oito Card!",
+  "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Oito Card!",
   "large_icon": "/img/uploads/oitocard-preto-png.png"
 }
