@@ -162,11 +162,7 @@ import {
         paymentOptions: [],
         customizations: [],
         kitItems: [],
-        currentTimer: null,
-        customLogoFile: null,
-        customLogoUrl: "",
-        isLoadingLogo: false,
-        logoInput: null,
+        currentTimer: null
       }
     },
   

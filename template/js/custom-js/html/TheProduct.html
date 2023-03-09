@@ -160,7 +160,7 @@
                 :class="custom.grid_id ? `product__customization--${custom.grid_id}` : null"
               >
                 <label :for="`c-${custom._id}`">
-                  {{ custom.label }}
+                  {{ custom.label }} :
                   <span
                     v-if="custom.add_to_price"
                     class="badge badge-secondary"
@@ -179,23 +179,17 @@
                 <template
                   v-if="custom.attachment && custom.grid_id === 'logomarca'"
                 >
-                
-  <style>.uploadcare--widget__button.uploadcare--widget__button_type_open {
-    background-color: #ccc;
-    
-  }</style>
-  <script>UPLOADCARE_LOCALE="pt"
-  UPLOADCARE_LOCALE_TRANSLATIONS = {
-    buttons: {
-      choose: {
-        files: {
-            one: 'escolha imagem'
-        }
-      }
-    }
-  }</script>
   
-                    <input type="hidden" :id="`c-${custom._id}`" role="uploadcare-uploader" data-public-key="183b04c37d6c335fc865" data-system-dialog="true" />
+                  <input 
+                    type="hidden" 
+                    :id="`c-${custom._id}`" 
+                    role="uploadcare-uploader" 
+                    data-public-key="183b04c37d6c335fc865" 
+                    data-system-dialog="true" 
+                    data-images-only="true"
+                    ref="upload"
+                    @click="ev => setCustomizationOption(custom, ev.target.value)"
+                  />
                 </template>
               </div>
             </slot>
