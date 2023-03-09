@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.2609fa03dea4aaf9ea98e7ab777b7bcd.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.df778b8cc0173f10be2b08b33ede4a12.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.b6ff1e271dd2960c1889af1574b6f376.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.007e4baf631aeb79e8b04c4ac8309472.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.37e14267a00a952780cad57d024e064f.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Oito Card",
+  "short_name": "Oito Card",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Oito Card!",
+  "background_color": "#ffffff",
+  "theme_color": "#222831"
+}
