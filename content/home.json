@@ -33,7 +33,7 @@
       "shuffle": true,
       "collection_id": null,
       "sort": "offers",
-      "title": "",
+      "title": "Nossos produtos",
       "headless": false,
       "limit": 4,
       "page": ""
