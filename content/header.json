@@ -15,8 +15,8 @@
   },
   "categories_list": {
     "featured": [],
-    "random": 4,
-    "full_width": false
+    "random": 3,
+    "full_width": true
   },
   "desktop_megamenu": false,
   "search_input": true,
