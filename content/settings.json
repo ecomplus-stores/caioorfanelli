@@ -1,10 +1,10 @@
 {
   "domain": "caioorfanelli.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#000000",
+  "primary_color": "#fffafa",
   "theme": {
     "bootswatch": "cerulean",
-    "custom": "_"
+    "custom": "clean-dark"
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/caioorfanelli",
@@ -18,7 +18,7 @@
   "favicon": "/img/uploads/favicon.jpg",
   "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "#ffffff",
+  "secondary_color": "#fcfafa",
   "icon": "/img/uploads/oitocard-preto-png.png",
   "store_id": 51364,
   "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Oito Card!",
