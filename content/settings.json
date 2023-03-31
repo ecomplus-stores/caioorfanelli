@@ -1,10 +1,10 @@
 {
   "domain": "caioorfanelli.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#222831",
+  "primary_color": "#000000",
   "theme": {
     "bootswatch": "cerulean",
-    "custom": "clean-dark"
+    "custom": "_"
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/caioorfanelli",
@@ -15,7 +15,7 @@
   "currency": "BRL",
   "mini_logo": "",
   "font_family": "Montserrat",
-  "favicon": "/img/uploads/favicon.png",
+  "favicon": "/img/uploads/favicon.jpg",
   "icons_font": "_",
   "country_code": "BR",
   "secondary_color": "#ffffff",
