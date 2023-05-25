@@ -1,26 +1,26 @@
 {
   "domain": "caioorfanelli.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#fffafa",
+  "primary_color": "#fffffc",
   "theme": {
     "bootswatch": "cerulean",
     "custom": "clean-dark"
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/caioorfanelli",
-  "logo": "/img/uploads/oitocard-branco-png.png",
-  "name": "Oito Card",
-  "short_name": "Oito Card",
+  "logo": "/img/uploads/perfil-laranja-branco-fundo-transparente.png",
+  "name": "Wulo Card",
+  "short_name": "Wulo Oito",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
   "font_family": "Montserrat",
-  "favicon": "/img/uploads/favicon.jpg",
+  "favicon": "/img/uploads/simbolo-laranja-preto-fundo-transparente.png",
   "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "#fcfafa",
-  "icon": "/img/uploads/oitocard-preto-png.png",
+  "secondary_color": "#e97400",
+  "icon": "/img/uploads/perfil-laranja-branco-fundo-transparente.png",
   "store_id": 51364,
-  "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Oito Card!",
-  "large_icon": "/img/uploads/oitocard-preto-png.png"
+  "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Wulo Card!",
+  "large_icon": "/img/uploads/perfil-laranja-branco-fundo-transparente.png"
 }
