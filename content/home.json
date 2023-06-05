@@ -35,7 +35,7 @@
       "sort": "offers",
       "title": "Nossos produtos",
       "headless": false,
-      "limit": 4,
+      "limit": 8,
       "page": ""
     },
     {
