@@ -1,7 +1,9 @@
 {
   "marketing_stripe": {
-    "text": "Aproveite nossos descontos de Lançamento!",
-    "link": ""
+    "text": "Após a compra, configure seu cartão em https://wulo.cards/",
+    "link": "https://wulo.cards/",
+    "background": "#000000",
+    "color": "#ffffff"
   },
   "contacts_stripe": {
     "pages": [
