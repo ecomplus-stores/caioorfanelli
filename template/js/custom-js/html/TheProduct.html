@@ -180,16 +180,24 @@
                   v-if="custom.attachment && custom.grid_id === 'logomarca'"
                 >
                   <br>
-                  <input 
-                    type="hidden" 
-                    :id="`c-${custom._id}`" 
-                    role="uploadcare-uploader" 
-                    data-public-key="183b04c37d6c335fc865" 
-                    data-system-dialog="true" 
-                    data-images-only="true"
-                    ref="upload"
-                    @click="ev => setCustomizationOption(custom, ev.target.value)"
-                  />
+                  <div
+                    class="custom-file mt-2"
+                    style="max-width: 280px"
+                  >
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      accept="image/*"
+                      ref="logoInput"
+                      @change="upload"
+                      @mouseenter="isLogoInputFocus = true"
+                      @mouseout="isLogoInputFocus = false"
+                    />
+                    <label class="custom-file-label" for="customFile"
+                      >Escolher imagem</label
+                    >
+                    <span v-if="customLogoUrl"> Imagem inserida!</span>
+                  </div>
                 </template>
               </div>
             </slot>

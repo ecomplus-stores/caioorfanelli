@@ -162,7 +162,14 @@ import {
         paymentOptions: [],
         customizations: [],
         kitItems: [],
-        currentTimer: null
+        currentTimer: null,
+        enablingLogoTimer: null,
+        customLogoFile: null,
+        customLogoUrl: "",
+        isLoadingLogo: false,
+        isLogoInputFocus: false,
+        logoInput: null,
+        isUploadingLogo: false,
       }
     },
   
@@ -197,6 +204,17 @@ import {
   
       name () {
         return this.selectedVariation.name || getName(this.body)
+      },
+      isUsingLogo() {
+        return this.customLogoUrl;
+      },
+  
+      logoCustomization() {
+        return (
+          this.body.customizations.find(({ grid_id }) =>
+            grid_id.startsWith("logomarca")
+          ) || {}
+        );
       },
   
       isInStock () {
@@ -417,7 +435,65 @@ import {
             return
           }
         }
+        const { logoCustomization } = this
         const customizations = [...this.customizations]
+        if (this.isUsingLogo && logoCustomization) {
+          if (this.customLogoUrl.length <= 255) {
+            customizations.push({
+              _id: logoCustomization._id,
+              label: logoCustomization.label,
+              add_to_price: logoCustomization.add_to_price,
+              option: {
+                text:
+                  this.customLogoUrl.length <= 70
+                    ? this.customLogoUrl
+                    : "Anexo",
+              },
+              attachment: this.customLogoUrl,
+            });
+              
+          } else {
+            this.isUploadingLogo = true;
+            const formData = new FormData();
+            formData.set("UPLOADCARE_PUB_KEY", "183b04c37d6c335fc865");
+            formData.set("UPLOADCARE_STORE", "auto");
+            const file = this.customLogoFile;
+            const date = new Date();
+            const filename =
+              date.getFullYear() +
+              (date.getMonth() + 1).toString().padStart(2, "0") +
+              date.getDate().toString().padStart(2, "0") +
+              ` Customização ${file.name}`;
+            formData.append("file", file, filename);
+            fetch("https://upload.uploadcare.com/base/", {
+              method: "POST",
+              body: formData,
+            })
+              .then((res) => res.json())
+              .then(({ file }) => {
+                this.customLogoUrl = `https://ucarecdn.com/${file}/`;
+                customizations.push({
+                  _id: logoCustomization._id,
+                  label: logoCustomization.label,
+                  add_to_price: logoCustomization.add_to_price,
+                  option: {
+                    text:
+                      this.customLogoUrl.length <= 70
+                        ? this.customLogoUrl
+                        : "Anexo",
+                  },
+                  attachment: this.customLogoUrl,
+                });
+              })
+              .catch((err) => {
+                console.error(err);
+                window.alert(err.message);
+              })
+              .finally(() => {
+                this.isUploadingLogo = false;
+              });
+          }
+        }
         this.$emit('buy', { product, variationId, customizations })
         if (this.canAddToCart) {
           ecomCart.addProduct({ ...product, customizations }, variationId, this.qntToBuy)
