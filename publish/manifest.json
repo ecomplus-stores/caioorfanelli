@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.bff52702a686ce2ee5047d967516fc1a.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.1e6fd6ecf6085c9e01735ba0b378d032.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.5f13d1e2db775cfd3919e09b7503306f.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.9a34809e5bcf1bb325e4d9ac4668809f.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.3e89e47ee91de620ec677461dd0a49d6.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Wulo Card",
+  "short_name": "Wulo Card",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Crie do seu jeito. Escolha layout, cor, nome e logo para seu Wulo Card!",
+  "background_color": "#ffffff",
+  "theme_color": "#e87a08"
+}
